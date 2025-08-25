@@ -75,7 +75,7 @@ header {
 }
 .logomenu {
   display: flex;
-  gap: 70px;
+  /*gap: 70px;*/
 }
 .mobilnav ul {
   text-align: center;
@@ -634,7 +634,6 @@ ul {
 @media (min-width: 320px) and (max-width: 768px) {
   .menuicon {
     display: block;
-    align-self: flex-end;
   }
   .mainideas,
   .ourteam > ul,
@@ -642,7 +641,10 @@ ul {
   .row2,
   footer,
   .footerform {
-    flex-direction: column;
+    0flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
   ul.mainideas li,
   footer {
@@ -662,4 +664,13 @@ ul {
     justify-content: center;
   }
 }
-/*ooooffff*/
+/*@media (min-width: 769px) and (max-width: 1158px) {
+  .row1a2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .row1a2 li {
+    flex: 1 1 calc((100% - 24px) / 2);
+  }
+}*/
