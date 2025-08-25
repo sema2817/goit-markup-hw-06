@@ -311,9 +311,9 @@ body {
   height: 80px;
   /*simdi ben div cok buyuk oluyo diye height belirledim ama dogrusunun boyle olmadigina eminim*/
   margin-top: 100px;
-  margin-left: 80px;
+  /*margin-left: 80px;*/
 }
-.ourportfolio ul,
+*/ .ourportfolio ul,
 .ourteam,
 .ourportfolio {
   flex-wrap: wrap;
@@ -452,6 +452,7 @@ footer {
   color: #f4f4fd;
   background-color: #2e2f42;
   display: flex;
+  /*padding-bottom: 100px;*/
 }
 .footerlogo {
   margin-bottom: 16px;
@@ -585,6 +586,7 @@ ul {
 }
 .ourteam {
   background-color: #f4f4fd;
+  width: 100%;
 }
 .icon-antenna,
 .icon-clock,
@@ -638,19 +640,26 @@ ul {
   .ourteam > ul,
   .row1,
   .row2,
-  footer {
+  footer,
+  .footerform {
     flex-direction: column;
   }
-  ul.mainideas li {
+  ul.mainideas li,
+  footer {
     text-align: center;
   }
   .myicons {
     display: none;
   }
-  .ourportfolio li {
+  .ourportfolio li,
+  .ourteam {
     display: inline-block;
     text-align: center;
     margin-bottom: 48px;
+  }
+  .socialmedia {
+    display: flex;
+    justify-content: center;
   }
 }
 /*ooooffff*/
