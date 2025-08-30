@@ -688,14 +688,41 @@ ul {
     display: flex;
     justify-content: center;
   }
+  /*.ourteam > ul > li,
+  .row1,
+  .row2 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }*/
 }
 @media (min-width: 769px) and (max-width: 1158px) {
   .title {
     padding-top: 112px;
     padding-bottom: 112px;
   }
-  .mainideas {
-    flex-direction: column;
+  .mainideas,
+  .ourteam ul,
+  .ourportfolio,
+  .row1,
+  .row2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .mainideas li,
+  .ourteam,
+  .ourportfolio li,
+  .row1 li,
+  .row2 li {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
   .myicons {
     display: none;
