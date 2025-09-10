@@ -644,22 +644,32 @@ ul {
   .menuicon {
     display: block;
   }
-  /*.menuicon {
-    display: flex;
-    justify-content: flex-end;
+  header {
+    padding: 17px;
   }
-  */
   .web,
   .studio {
-    font-size: 20px;
+    font-size: 22px;
   }
   .mainideas,
-  .ourteam > ul,
   .row1,
   .row2 {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+  }
+  .ourteam > ul > li,
+  .row1,
+  .row2 {
+    flex: 0 0 auto;
+    max-width: none;
+  }
+  .ourteam > ul,
+  .ourportfolio > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
   .title {
     padding-top: 72px;
@@ -668,6 +678,9 @@ ul {
   footer {
     flex-direction: column;
     justify-content: center;
+  }
+  .footercontent {
+    margin-bottom: 72px;
   }
   .subsbutton {
     margin: 0 auto;
@@ -691,16 +704,13 @@ ul {
     text-align: center;
     margin-bottom: 48px;
   }
+  .mainideas h3 {
+    font-size: 24px;
+  }
   .socialmedia {
     display: flex;
     justify-content: center;
   }
-  /*.ourteam > ul > li,
-  .row1,
-  .row2 {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }*/
 }
 @media (min-width: 769px) and (max-width: 1158px) {
   .title {
@@ -788,7 +798,7 @@ ul {
   .footertab,
   .footerform {
     display: flex;
-    gap: 24px;
+    gap: 28px;
   }
   footer {
     flex-direction: column;
@@ -796,5 +806,51 @@ ul {
     gap: 72px;
     padding-top: 96px;
     padding-bottom: 96px;
+  }
+}
+@media (min-width: 1159px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .mobilnav,
+  .mobiladdress {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobilnav ul {
+    gap: 40px;
+  }
+  .mobiladdress {
+    gap: 40px;
+  }
+  .title {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .mainideas {
+    border: 1px solid red;
+  }
+  .ourportfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .footertab {
+    display: flex;
+    gap: 100px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    gap: 80px;
+  }
+  .footerform {
+    display: flex;
   }
 }
