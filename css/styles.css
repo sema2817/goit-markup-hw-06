@@ -129,9 +129,6 @@ address ul {
   white-space: nowrap;
   gap: 40px;
 }
-address {
-  margin-left: 332px;
-}
 header ul {
   display: flex;
 }
@@ -139,7 +136,8 @@ body {
   font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: #434455;
 }
-.modal {
+.modal,
+.modalmobile {
   display: none;
   position: fixed;
   top: 0;
@@ -154,7 +152,12 @@ body {
   display: flex;
   background-color: rgba(46, 47, 66, 0.4);
 }*/
-.modalbg {
+.modalmobile.is-open {
+  display: flex;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.modalbg,
+.modalbgmobile {
   position: relative;
   z-index: 1000;
   width: 408px;
@@ -193,6 +196,10 @@ body {
 .circle:hover .x,
 .circle:focus .x {
   fill: #ffffff;
+}
+.modalmenunav {
+  font-size: 36px;
+  font-weight: 700;
 }
 .modaltitle {
   margin-top: 72px;
@@ -286,7 +293,6 @@ body {
   gap: 16px;
 }
 .footerform {
-  /*display: flex;*/
   gap: 24px;
 }
 .subsbutton {
