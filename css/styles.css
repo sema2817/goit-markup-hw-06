@@ -42,15 +42,11 @@ header {
   width: 100%;
 }
 .mobilicon {
-  visibility: hidden;
+  display: none;
+  position: relative; /*nedddeeeeennnn*/
   height: 24px;
   width: 24px;
   cursor: pointer;
-}
-.menuicon {
-  display: none;
-  cursor: pointer;
-  position: relative; /*nedddeeeeennnn*/
 }
 .logo {
   position: absolute;
@@ -79,7 +75,7 @@ header {
 }
 .logomenu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
@@ -333,19 +329,14 @@ body {
 }
 .footersubs {
   height: 80px;
-  /*simdi ben div cok buyuk oluyo diye height belirledim ama dogrusunun boyle olmadigina eminim*/
-  /*margin-top: 100px;*/
-  /*margin-left: 80px;*/
 }
-*/ .ourportfolio ul,
+.ourportfolio ul,
 .ourteam,
 .ourportfolio {
   flex-wrap: wrap;
 }
 .row1,
 .row2 {
-  /*padding-left: 156px;
-  padding-right: 156px;*/
   display: flex;
   justify-content: center;
 }
@@ -476,19 +467,10 @@ footer {
   color: #f4f4fd;
   background-color: #2e2f42;
   display: flex;
-  /*padding-bottom: 100px;*/
 }
 .footerlogo {
   margin-bottom: 16px;
 }
-/*.footercontent {
-  margin-left: 156px;
-  margin-top: 100px;
-}
-.footericons {
-  margin-left: 120px;
-  margin-top: 100px;
-}*/
 .footericons p {
   font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: #ffffff;
@@ -555,8 +537,6 @@ footer {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office-optimized.jpg);
-  /*padding-top: 188px;
-  padding-bottom: 188px;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -659,7 +639,7 @@ ul {
   .logo {
     left: 16px;
   }
-  .menuicon {
+  .mobilicon {
     display: block;
   }
   header {
