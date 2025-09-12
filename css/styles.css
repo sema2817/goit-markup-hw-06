@@ -140,10 +140,6 @@ body {
 .modal.is-open {
   display: flex;
   background-color: rgba(46, 47, 66, 0.4);
-}*/ /*
-.modalmobile.is-open {
-  display: flex;
-  background-color: rgba(46, 47, 66, 0.4);
 }*/
 .modalbg {
   position: relative;
@@ -230,7 +226,7 @@ body {
 }
 .modalforminput {
   border: 1px solid rgba(46, 47, 66, 0.4);
-  /*width: 360px;*/
+  width: 360px;
   border-radius: 4px;
   padding: 11px;
   padding-left: 38px;
@@ -636,6 +632,21 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  /*.modalmobile.is-open {
+    display: flex;
+    background-color: rgba(46, 47, 66, 0.4);
+  }*/
+  .modalbgmobile .circle {
+    background-color: #ffffff;
+  }
+  .modalbgmobile .circle:hover,
+  .modalbgmobile .circle:focus {
+    background-color: #e7e9fc;
+  }
+  .modalbgmobile .x:hover,
+  .modalbgmobile .x:focus {
+    fill: #2e2f42;
+  }
   header ul {
     display: inline;
   }
@@ -669,7 +680,7 @@ ul {
     display: flex;
     justify-content: center;
   }
-  .mainideas li,
+  /*.mainideas li,
   .row1 li,
   .row2 li {
     flex: 0 0 calc((100% - 24px) / 2);
@@ -743,7 +754,10 @@ ul {
   .title {
     padding-top: 112px;
     padding-bottom: 112px;
-  }
+  } /*
+  .ourteam > ul > li {
+    flex-basis: calc((100% - 24px) / 2);
+  }*/
   .mainideas,
   .ourteam ul,
   .ourportfolio,
