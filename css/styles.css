@@ -768,11 +768,15 @@ ul {
     gap: 24px;
   }
   .mainideas li,
-  .ourteam,
   .ourportfolio li,
   .row1 li,
   .row2 li {
     flex: 0 0 calc((100% - 24px) / 2);
+  }
+  .ourteam ul {
+    max-width: calc(2 * 264px + 24px);
+    margin-left: auto;
+    margin-right: auto;
   }
   .portfolio {
     display: flex;
