@@ -521,6 +521,9 @@ footer {
 .imagewrapper:hover .overlay {
   transform: translateY(0);
 }
+.imagewrapper img {
+  width: 100%;
+}
 .overlay p {
   padding-top: 40px;
   padding-left: 32px;
@@ -588,6 +591,14 @@ ul {
   background-color: #f4f4fd;
   width: 100%;
 }
+.ourportfolio ul {
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.ourportfolio li {
+  max-width: 380px;
+}
 .icon-antenna,
 .icon-clock,
 .icon-diagram,
@@ -635,7 +646,13 @@ ul {
   /*.modalmobile.is-open {
     display: flex;
     background-color: rgba(46, 47, 66, 0.4);
+  }*/ /*
+  .ourportfolio h2 {
+    display: inline-block;
   }*/
+  .mobilnav {
+    display: none;
+  }
   .modalbgmobile .circle {
     background-color: #ffffff;
   }
